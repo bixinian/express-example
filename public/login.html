@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="./js/login.js"></script>
+    <link rel="stylesheet" href="./css/login.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+</head>
+<body>
+    <form id="loginform" onsubmit="return false;">
+        <div class="container">
+            <h1 style="text-align: center;">登录</h1>
+            <hr>
+            <label for="username"><b>用户名</b></label>
+            <input type="text" placeholder="输入用户名" minlength="5" maxlength="10" name="username" id="username" required>
+      
+            <label for="pwd"><b>密码</b></label>
+            <input type="password" placeholder="输入密码" name="pwd" minlength="5" maxlength="20" id="pwd" required>
+      
+            <button type="submit" id="login_btn">登录</button>
+            <hr>
+            <div class="signin">
+                <p>没有有一个账户？<a href="/register.html">注册</a>.</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

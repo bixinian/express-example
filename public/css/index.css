@@ -1,0 +1,63 @@
+.container {
+    padding: 16px;
+    margin: 10% auto;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+hr{
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.qq {
+    background-image:url(https://www.w3schools.cn/w3images/mist.jpg);
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+  

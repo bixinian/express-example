@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+  <script src="./js/sweetalert.min.js"></script>
+  <script src="./js/reg.js"></script>
+  <link rel="stylesheet" href="./css/register.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>注册</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 style="text-align: center;">注册</h1>
+    <hr>
+    <form id="signform" onsubmit="return false;">
+    <label for="username"><b>用户名</b></label>
+    <input type="text" placeholder="由6到10位数字字母符合组成" minlength="6" maxlength="10" name="username" id="username" required>
+
+    <label for="qq"><b>QQ</b></label>
+    <input type="number" placeholder="输入QQ" oninput="if(value.length>10)value=value.slice(0,10)" name="qq" id="qq" required>
+
+    <label for="pwd"><b>密码</b></label>
+    <input type="password" placeholder="由6到10位数字字母符合组成" minlength="6" maxlength="20" name="pwd" id="pwd" onkeyup="checkpwd()" required>
+
+    <label for="repwd"><b>确认密码</b></label>
+    <input type="password" placeholder="再输入密码" maxlength="20" name="repwd" id="repwd" onkeyup="checkpwd()" required>
+    <div class="err">
+      <svg t="1693238478283" class="icon" viewBox="0 0 1024 1024" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" p-id="1293" width="30" height="30">
+        <path
+          d="M512.2 92.5c-232 0-420 188-420 420s188 420 420 420 420-188 420-420-188-420-420-420z m-1.6 189h1.7c22.2 0 40.3 18 40.3 40.3v1.7l-12.3 294h-56l-12.3-294c-0.9-22.3 16.3-41 38.6-42z m1.6 462c-23.2 0-42-18.8-42-42s18.8-42 42-42 42 18.8 42 42-18.8 42-42 42z"
+          fill="#EB5851" p-id="1294">
+        </path>
+      </svg>&nbsp;&nbsp;两次密码不一致！</div>
+    <button type="submit" class="registerbtn" id="reg_btn">注册</button>
+  </form>
+    <hr>
+    <div class="signin">
+      <p>已经有一个账户？<a href="/login.html">登录</a>.</p>
+    </div>
+  </div>
+</body>
+
+</html>

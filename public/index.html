@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="./js/sweetalert.min.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户中心</title>
+</head>
+<body>
+    <div class="container">
+        <div class="qq">
+            <img src="https://q.qlogo.cn/g?b=qq&nk=2936606424&s=100" style="display:block;margin-left: auto;margin-right: auto;border: 5px solid white;border-radius: 50%;" id="img">
+        </div>
+        <hr>
+        <b>用户名：</b>
+        <input type="text" disabled="disabled" id="username">
+        <b>QQ：</b>
+        <input type="text" disabled="disabled" id="qq">
+        <hr>
+        <button id="logout">退出登录</button>
+        <button id="resetpwd">更改密码</button>
+        <table id="form" style="overflow-x:auto;">
+            <tr>
+              <th id="id">ID</th>
+              <th id="username">用户名</th>
+              <th id="qq">QQ</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
